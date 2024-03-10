@@ -9,8 +9,10 @@ import numpy
 pygame.init()
 
 # constants
+TILE_SIZE = 60
 WINDOW_WIDTH = 1200
 WINDOW_HEIGHT = 900
+
 bg_color = pygame.Color(255, 255, 255)
 player_color = pygame.Color(0, 0, 255)
 wall_color = pygame.Color(0, 0, 0)
@@ -25,7 +27,6 @@ def lobsterCall():
     canvas.blit(lobster, lobster.get_rect())
     mixer.music.play()
 
-TILE_SIZE = 100
 WALL_THICKNESS = int(TILE_SIZE/15)
 LB_W = int(WINDOW_WIDTH/TILE_SIZE)
 LB_H = int(WINDOW_HEIGHT/TILE_SIZE)
